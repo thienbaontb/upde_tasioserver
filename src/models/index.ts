@@ -6,3 +6,5 @@ export * from './dbs/salepoint.model';
 export * from './dbs/trip.model';
 export * from './dbs/house.model';
 export * from './dbs/supplier.model';
+export * from './inputs';
+export * from './inputs/addsalepoint.model';
