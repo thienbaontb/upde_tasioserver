@@ -9,3 +9,5 @@ export * from './dbs/supplier.model';
 export * from './inputs';
 export * from './inputs/addsalepoint.model';
 export * from './dbs/wallet.model';
+export * from './inputs/addsupplier.model';
+export * from './inputs/addhouse.model';

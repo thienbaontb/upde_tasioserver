@@ -102,9 +102,9 @@ export class KeyResponse {
   };
 
   //not exists
-  static NOT_EXISTS_STATION_400 = {
-    key: "not_exists_station_400",
-    message: "Not exists station"
+  static NOT_EXISTS_SALEPOINT_400 = {
+    key: "not_exists_salepoint_400",
+    message: "Not exists salepoint"
   };
 
   static NOT_EXISTS_APPOINTMENT_400 = {
