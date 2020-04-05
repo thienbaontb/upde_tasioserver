@@ -1,7 +1,8 @@
-import {TasioserverApplication} from './application';
-import {ApplicationConfig} from '@loopback/core';
+import { TasioserverApplication } from './application';
+import { ApplicationConfig } from '@loopback/core';
 
-export {TasioserverApplication};
+export { TasioserverApplication };
+import { BeginApplication } from './beginapplication';
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new TasioserverApplication(options);
@@ -12,5 +13,6 @@ export async function main(options: ApplicationConfig = {}) {
   console.log(`Server is running at ${url}`);
   console.log(`Try ${url}/ping`);
 
+  BeginApplication.initValues();
   return app;
 }

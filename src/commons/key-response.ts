@@ -62,6 +62,11 @@ export class KeyResponse {
     message: "Invalid type time"
   };
 
+  static INVALID_AIRPORT_SYMBOL_400 = {
+    key: "invalid_airport_symbol_400",
+    message: "Invalid airport symbol"
+  };
+
   //invalid geopoint
   static INVALID_LAT_400 = { key: "invalid_lat_400", message: "Invalid lat" };
   static INVALID_LNG_400 = { key: "invalid_lng_400", message: "Invalid lng" };
@@ -166,5 +171,11 @@ export class KeyResponse {
   static UPDATE_AVATAR_SUCCESS_200 = {
     key: "update_avatar_success_200",
     message: "Update avatar success"
+  };
+
+
+  static CREATE_WALLET_FAIL_401 = {
+    key: "create_wallet_fail",
+    message: "Can't create wallet"
   };
 }

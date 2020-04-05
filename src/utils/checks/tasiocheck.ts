@@ -6,7 +6,7 @@ let TRIP_STATUS = Constants.TRIP_STATUS;
 let VEHICLE = Constants.VEHICLE;
 let TRIP_TYPE = Constants.TRIP_TYPE;
 let TYPE_TIME = Constants.TYPE_TIME;
-
+let AIRPORT = Constants.AIRPORT;
 
 export class TasioCheck {
   static isTypeSalepoint(type: number) {
@@ -35,6 +35,13 @@ export class TasioCheck {
 
   static isTypeTime(type: string) {
     return Object.values(TYPE_TIME).indexOf(type) > -1;
+  }
+
+  static isSymbol(symbol: string) {
+    for (var key in AIRPORT) {
+      if (symbol === AIRPORT[key].SYMBOL) return true;
+    }
+    return false;
   }
 
 }

@@ -8,3 +8,4 @@ export * from './dbs/house.model';
 export * from './dbs/supplier.model';
 export * from './inputs';
 export * from './inputs/addsalepoint.model';
+export * from './dbs/wallet.model';
